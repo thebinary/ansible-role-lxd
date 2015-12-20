@@ -1,6 +1,6 @@
 galaxy_info:
   author: thebinary
-  description: An Ansible role that installs LXD on Ubuntu and performs base configuration as given in get started guide
+  description: Installs LXD on Ubuntu and performs base configuration as given in get started guide
   # company: your company (optional)
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
