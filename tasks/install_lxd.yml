@@ -1,0 +1,15 @@
+# Install lxd according to 'https://linuxcontainers.org/lxd/getting-started-cli/'
+
+- name: ensure system is ubuntu 
+  assert:
+    that:
+      - "'{{ ansible_distribution }}' == 'Ubuntu'"
+
+- name: add lxd apt-repo
+  apt_repository: repo='ppa:ubuntu-lxc/lxd-stable' state=present
+
+- name: perform dist-upgrade
+  apt: upgrade=dist update_cache=yes
+
+- name: install lxd
+  apt: name=lxd state=latest

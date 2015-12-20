@@ -1,0 +1,8 @@
+# configure lxd to be base ready
+
+- name: generate lxc client certificate
+  command: "{{ lxd_lxc_path }} list"
+
+- name: add images.linuxcontainers.org to lxd remote
+  command: "{{ lxd_lxc_path }} remote add images images.linuxcontainers.org"
+  ignore_errors: true

@@ -1,0 +1,7 @@
+---
+# defaults file for lxd
+
+# remote operation configurations
+lxd_allow_remote: false
+lxd_https_listen_address: "[::]"      # all interfaces on port 8443
+lxd_trust_password: "4trustlxd123"    # default password to connect from remote client

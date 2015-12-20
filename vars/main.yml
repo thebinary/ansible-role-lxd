@@ -1,0 +1,6 @@
+---
+# vars file for lxd
+
+# paths
+lxd_lxc_path: /usr/bin/lxc
+
