@@ -1,4 +1,4 @@
-Role Name
+ansible-role-lxd    [![Build Status](https://travis-ci.org/thebinary/ansible-role-lxd.svg?branch=master)](https://travis-ci.org/thebinary/ansible-role-lxd)
 =========
 
 An Ansible role that installs LXD on Ubuntu and performs base configuration as given in get started guide
