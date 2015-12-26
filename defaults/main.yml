@@ -5,3 +5,10 @@
 lxd_allow_remote: false
 lxd_https_listen_address: "[::]"      # all interfaces on port 8443
 lxd_trust_password: "4trustlxd123"    # default password to connect from remote client
+
+# lxcbr0 configuration 
+lxd_lxc_addr: "10.0.3.1"
+lxd_lxc_netmask: "255.255.255.0"
+lxd_lxc_network: "10.0.3.0/24"
+lxd_lxc_dhcp_range: "10.0.3.2,10.0.3.254"
+lxd_lxc_dhcp_max: "253"
